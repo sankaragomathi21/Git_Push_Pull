@@ -1,0 +1,269 @@
+USER@DESKTOP-60BHFLM MINGW64 ~
+$ git config --global user.name "sankaragomathi21"
+
+USER@DESKTOP-60BHFLM MINGW64 ~
+$ git config --global user.name keerthusankara2721@gmail.com
+
+USER@DESKTOP-60BHFLM MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+core.usebuiltinfsmonitor=true
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=keerthusankara2721@gmail.com
+
+USER@DESKTOP-60BHFLM MINGW64 ~
+$ pwd
+/c/Users/USER
+
+USER@DESKTOP-60BHFLM MINGW64 ~
+$ mkdir git_demo
+
+USER@DESKTOP-60BHFLM MINGW64 ~
+$ cd git_demo
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo
+$ cd FirstRepo
+bash: cd: FirstRepo: No such file or directory
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo
+$ git init
+Initialized empty Git repository in C:/Users/USER/git_demo/.git/
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo (master)
+$ mkdir FirstRepo
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo (master)
+$ cd FirstRepo
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git init
+Initialized empty Git repository in C:/Users/USER/git_demo/FirstRepo/.git/
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ touch alpha
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ notepad alpha.txt
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git status
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        alpha
+        alpha.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git add .
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git status
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   alpha
+        new file:   alpha.txt
+
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git commit -m "beta gamma"
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'USER@DESKTOP-60BHFLM.(none)')
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git commit -m "beta gamma"
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'USER@DESKTOP-60BHFLM.(none)')
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git status
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   alpha
+        new file:   alpha.txt
+
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ touch beta.txt
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ notepad beta.txt
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ notepad alpha.txt
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git status
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   alpha
+        new file:   alpha.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   alpha.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        beta.txt
+
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git add .
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git commit -m "alpha gamma"
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'USER@DESKTOP-60BHFLM.(none)')
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git remote add origin https://github.com/sankaragomathi21/FirstRepo.git
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git remote -v
+origin  https://github.com/sankaragomathi21/FirstRepo.git (fetch)
+origin  https://github.com/sankaragomathi21/FirstRepo.git (push)
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/sankaragomathi21/FirstRepo.git'
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git config --global user.name "sankaragomathi21"
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git config --global user.email keerthusankara2721@gmail.com
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ pwd
+/c/Users/USER/git_demo/FirstRepo
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git status
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   alpha
+        new file:   alpha.txt
+        new file:   beta.txt
+
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git commit -m "alpha gamma"
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[master (root-commit) 16da32d] alpha gamma
+ 3 files changed, 2 insertions(+)
+ create mode 100644 alpha
+ create mode 100644 alpha.txt
+ create mode 100644 beta.txt
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git remote add origin https://github.com/sankaragomathi21/FirstRepo.git
+error: remote origin already exists.
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git remote -v
+origin  https://github.com/sankaragomathi21/FirstRepo.git (fetch)
+origin  https://github.com/sankaragomathi21/FirstRepo.git (push)
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 319 bytes | 53.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sankaragomathi21/FirstRepo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/FirstRepo (master)
+$
