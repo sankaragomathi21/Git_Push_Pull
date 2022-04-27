@@ -1,0 +1,145 @@
+
+USER@DESKTOP-60BHFLM MINGW64 ~
+$ mkdir git_demo
+mkdir: cannot create directory ‘git_demo’: File exists
+
+USER@DESKTOP-60BHFLM MINGW64 ~
+$ ccd git_demo
+bash: ccd: command not found
+
+USER@DESKTOP-60BHFLM MINGW64 ~
+$ cd git_demo
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo (master)
+$ pwd
+/c/Users/USER/git_demo
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo (master)
+$ mkdir Changes
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo (master)
+$ cd Changes
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ pwd
+/c/Users/USER/git_demo/Changes
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ git init
+Initialized empty Git repository in C:/Users/USER/git_demo/Changes/.git/
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ git pull https://github.com/sankaragomathi21/FirstRepo.git
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), 299 bytes | 7.00 KiB/s, done.
+From https://github.com/sankaragomathi21/FirstRepo
+ * branch            HEAD       -> FETCH_HEAD
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:windows/notepad beta
+bash: C:windows/notepad: No such file or directory
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:\Users\USER\git_demo\Changes
+bash: C:UsersUSERgit_demoChanges: command not found
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:\Users\USER\git_demo\Changes\beta.txt
+bash: C:UsersUSERgit_demoChangesbeta.txt: command not found
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:\Users\USER\git_demo\Changes beta
+bash: C:UsersUSERgit_demoChanges: command not found
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:/Users/USER/git_demo/Changes beta
+bash: C:/Users/USER/git_demo/Changes: Is a directory
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:/Users/USER/git_demo/Changes/beta.txt
+C:/Users/USER/git_demo/Changes/beta.txt: line 1: alpha: command not found
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:/Users/USER/git_demo/Changes/beta
+bash: C:/Users/USER/git_demo/Changes/beta: No such file or directory
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:/Users/USER/git_demo/Changes/notepad beta
+bash: C:/Users/USER/git_demo/Changes/notepad: No such file or directory
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:/Users/USER/git_demo/Changes/notepad beta.txt
+bash: C:/Users/USER/git_demo/Changes/notepad: No such file or directory
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:windows/notepad beta
+bash: C:windows/notepad: No such file or directory
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:/windows/notepad beta
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:/windows/notepad alpha
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ C:/windows/notepad beta
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ git status
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   alpha
+        modified:   beta.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ git add .
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ git commit -m "changes made"
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[master dfd5d5c] changes made
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ git status
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch master
+nothing to commit, working tree clean
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ git remote add origin https://github.com/sankaragomathi21/FirstRepo.git
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ git remote -v
+origin  https://github.com/sankaragomathi21/FirstRepo.git (fetch)
+origin  https://github.com/sankaragomathi21/FirstRepo.git (push)
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 333 bytes | 111.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sankaragomathi21/FirstRepo.git
+   16da32d..dfd5d5c  master -> master
+branch 'master' set up to track 'origin/master'.
+
+USER@DESKTOP-60BHFLM MINGW64 ~/git_demo/Changes (master)
+$
